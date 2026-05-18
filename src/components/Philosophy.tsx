@@ -18,8 +18,8 @@ export default function Philosophy() {
     <section className="bg-forest py-24 lg:py-36">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
 
-        {/* Central statement */}
-        <div className="mb-20 lg:mb-28 max-w-2xl">
+        {/* Central statement — centered */}
+        <div className="mb-20 lg:mb-28 max-w-2xl mx-auto text-center">
           <h2 className="font-serif font-light text-cream text-4xl md:text-5xl lg:text-[58px] leading-[1.05] mb-7">
             Not a gym class.
             <br />

@@ -1,8 +1,8 @@
 export default function About() {
   return (
     <section id="about" className="bg-cream py-24 lg:py-36">
-      <div className="max-w-6xl mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[42%_1fr] gap-12 xl:gap-20 items-start">
+      <div className="max-w-5xl mx-auto px-6 md:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[45%_1fr] gap-12 xl:gap-16 items-start">
 
           {/* Image — narrower column, less dominant */}
           <div className="relative aspect-[4/5] overflow-hidden">

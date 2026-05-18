@@ -2,11 +2,11 @@ export default function BookingCTA() {
   return (
     <section id="booking" className="bg-cream py-24 lg:py-36">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
+        <div className="max-w-2xl mx-auto text-center">
 
-        {/* Thin rule */}
-        <div className="w-12 h-px bg-terracotta/40 mb-14" />
+          {/* Thin rule */}
+          <div className="w-10 h-px bg-terracotta/40 mx-auto mb-12" />
 
-        <div className="max-w-2xl">
           <p className="font-sans text-terracotta text-[11px] tracking-[0.3em] uppercase mb-5">
             Join a session
           </p>
@@ -27,8 +27,8 @@ export default function BookingCTA() {
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-        </div>
 
+        </div>
       </div>
     </section>
   )
