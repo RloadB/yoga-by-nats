@@ -1,14 +1,21 @@
-import LogoMark from './LogoMark'
-
 export default function Footer() {
   return (
     <footer className="bg-brown">
       <div className="px-8 md:px-12 lg:px-20 xl:px-28 pt-20 lg:pt-28 pb-12 lg:pb-16">
 
-        {/* Centered brand block */}
+        {/* Centered brand block — actual logo image, inverted to white */}
         <div className="text-center mb-16">
-          <LogoMark size={36} className="text-cream/25 mx-auto mb-5" />
-          <p className="font-serif text-3xl text-cream mb-4 tracking-wide">Yoga By Nats</p>
+          <img
+            src="/logo/logo.png"
+            alt="Yoga By Nats"
+            style={{
+              height: '80px',
+              width: 'auto',
+              filter: 'brightness(0) invert(1)',
+              opacity: 0.65,
+            }}
+            className="mx-auto mb-5"
+          />
           <p className="font-sans text-cream/40 text-sm leading-relaxed max-w-xs mx-auto">
             I created this space as a softer place for movement, ritual and
             presence — for anyone who needs a quiet moment in their week.

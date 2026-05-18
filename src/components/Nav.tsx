@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import LogoMark from './LogoMark'
 
 const links = [
   { label: 'Classes', href: '#classes' },
@@ -25,17 +24,20 @@ export default function Nav() {
         onHero ? 'bg-transparent' : 'bg-cream/95 backdrop-blur-md border-b border-cream-dark'
       }`}
     >
-      {/* Same padding as all page sections */}
       <div className="px-8 md:px-12 lg:px-20 xl:px-28 h-16 flex items-center justify-between">
 
-        <a
-          href="#"
-          className={`flex items-center gap-3 transition-colors duration-500 ${
-            onHero ? 'text-cream' : 'text-forest'
-          }`}
-        >
-          <LogoMark size={26} />
-          <span className="font-serif text-xl tracking-wide">Yoga By Nats</span>
+        {/* Logo — actual brand image, inverted to white on hero */}
+        <a href="#">
+          <img
+            src="/logo/logo.png"
+            alt="Yoga By Nats"
+            style={{
+              height: '44px',
+              width: 'auto',
+              filter: onHero ? 'brightness(0) invert(1)' : 'brightness(0)',
+              transition: 'filter 0.5s',
+            }}
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

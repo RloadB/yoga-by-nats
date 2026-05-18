@@ -8,21 +8,16 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover object-[center_30%]"
       />
 
-      {/* Overlays — darken edges, protect center */}
+      {/* Overlays */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,transparent_0%,rgba(42,31,26,0.22)_60%,rgba(42,31,26,0.65)_100%)]" />
       <div className="absolute inset-0 bg-gradient-to-t from-brown/55 via-transparent to-transparent" />
 
-      {/* Content — truly centered */}
+      {/* Content — centered */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-        <p className="font-sans text-cream/50 text-[10px] tracking-[0.38em] uppercase mb-7">
-          Yoga By Nats &nbsp;·&nbsp; Antwerp
-        </p>
-        <h1 className="font-serif font-light text-cream text-[44px] md:text-6xl lg:text-[72px] leading-[1.02] mb-10 max-w-3xl">
-          A soft space for
+        <h1 className="font-serif font-light text-cream text-[44px] md:text-6xl lg:text-[72px] leading-[1.02] mb-10">
+          A soft space for movement,
           <br />
-          movement, breath
-          <br />
-          and ritual.
+          breath and ritual.
         </h1>
         <div className="flex flex-wrap items-center justify-center gap-5">
           {/* TODO: Replace href="#booking" with https://app.zenamu.com/yogabynats */}
