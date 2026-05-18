@@ -1,0 +1,44 @@
+const pillars = [
+  {
+    title: 'Slow and intentional',
+    body: 'No rushing, no pressure. Each session moves at a pace that lets you actually feel what you are doing.',
+  },
+  {
+    title: 'Spiritually grounded',
+    body: 'Rooted in traditional practice but welcoming and approachable. Spirit is present without being overwhelming.',
+  },
+  {
+    title: 'Beginner-friendly',
+    body: 'You do not need experience, flexibility or a special background. Your curiosity and willingness to show up is enough.',
+  },
+]
+
+export default function Philosophy() {
+  return (
+    <section className="bg-forest py-24 lg:py-32">
+      <div className="max-w-6xl mx-auto px-6 md:px-10">
+        <div className="max-w-3xl mx-auto text-center mb-20 lg:mb-24">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.08] mb-7">
+            Not a gym class.
+            <br />
+            Not a performance.
+          </h2>
+          <p className="font-sans text-cream/60 text-lg leading-relaxed">
+            This is yoga as a soft landing. A space where you do not need to be flexible,
+            experienced or perfect. You simply arrive as you are.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {pillars.map((p) => (
+            <div key={p.title} className="border-t border-white/15 pt-8">
+              <div className="w-6 h-px bg-gold mb-6" />
+              <h3 className="font-serif text-xl text-cream mb-4">{p.title}</h3>
+              <p className="font-sans text-cream/55 text-sm leading-relaxed">{p.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
