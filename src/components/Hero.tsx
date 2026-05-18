@@ -31,49 +31,14 @@ export default function Hero() {
 
       {/* Right — Image */}
       <div className="relative h-[72vw] sm:h-[60vw] lg:h-auto overflow-hidden">
-        {/*
-          TODO: When Natalia's photo is ready, replace this placeholder with:
-          <img
-            src="/images/natalia/natalia-hero.jpg"
-            alt="Natalia Bautista — Yoga By Nats"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
-        */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'linear-gradient(160deg, #EDE0CC 0%, #D9C0A0 30%, #C4A07A 60%, #A07850 100%)',
-          }}
-        >
-          {/* Subtle texture layer */}
-          <div
-            className="absolute inset-0 opacity-[0.07]"
-            style={{
-              backgroundImage:
-                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E\")",
-              backgroundSize: '300px 300px',
-            }}
-          />
-
-          {/* Decorative border frame */}
-          <div className="absolute inset-8 border border-white/15 pointer-events-none" />
-
-          {/* Large watermark initial */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-            <span className="font-serif italic text-[240px] text-white/[0.07] leading-none">
-              N
-            </span>
-          </div>
-
-          {/* Bottom name tag */}
-          <div className="absolute bottom-10 left-0 right-0 flex flex-col items-center gap-3">
-            <div className="w-6 h-px bg-white/30" />
-            <p className="font-serif italic text-white/40 text-sm tracking-widest">
-              Natalia Bautista
-            </p>
-          </div>
-        </div>
+        {/* TODO: Replace with Natalia's real photo when available — remove Unsplash temp image */}
+        <img
+          src="/images/natalia/natalia-hero.jpg"
+          alt="Natalia Bautista — Yoga By Nats, yoga teacher in Antwerp"
+          className="absolute inset-0 w-full h-full object-cover object-top"
+        />
+        {/* Subtle warm overlay to blend with site palette */}
+        <div className="absolute inset-0 bg-brown/10 mix-blend-multiply pointer-events-none" />
       </div>
     </section>
   )

@@ -5,8 +5,9 @@ const offerings = [
     description:
       'Grounded, accessible yoga focused on breath, alignment and presence. Suitable for all levels — no experience needed.',
     detail: 'Saturdays · Antwerp',
-    gradient: 'linear-gradient(135deg, #D4A882 0%, #A07850 100%)',
-    imgPath: '/images/natalia/natalia-practice-1.jpg',
+    // TODO: Replace with Natalia's real photo — remove Unsplash temp image
+    imgSrc: '/images/natalia/natalia-hatha.jpg',
+    imgAlt: 'Hatha Yoga class — Yoga By Nats Antwerp',
   },
   {
     label: 'Monthly workshops',
@@ -14,8 +15,9 @@ const offerings = [
     description:
       'Intimate sessions inspired by moon cycles, reflection, intention setting and gentle movement. For those who want more than just a workout.',
     detail: 'Monthly · Small groups',
-    gradient: 'linear-gradient(135deg, #B89880 0%, #7A5840 100%)',
-    imgPath: '/images/natalia/natalia-practice-2.jpg',
+    // TODO: Replace with Natalia's real photo — remove Unsplash temp image
+    imgSrc: '/images/natalia/natalia-ritual.jpg',
+    imgAlt: 'Moon & Ritual Workshop — Yoga By Nats',
   },
   {
     label: 'Personal practice',
@@ -23,8 +25,9 @@ const offerings = [
     description:
       'Personal guidance for individuals or small groups looking for a quieter, more personal and deeply tailored practice.',
     detail: 'Flexible · On request',
-    gradient: 'linear-gradient(135deg, #9E8878 0%, #624E44 100%)',
-    imgPath: null,
+    // TODO: Replace with Natalia's real photo — remove Unsplash temp image
+    imgSrc: '/images/natalia/natalia-private.jpg',
+    imgAlt: 'Private yoga session — Yoga By Nats Antwerp',
   },
 ]
 
@@ -44,19 +47,11 @@ export default function Classes() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           {offerings.map((o) => (
             <div key={o.title} className="group flex flex-col">
-              {/* Image / placeholder */}
               <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-6">
-                {/*
-                  TODO: Replace gradient div with:
-                  <img
-                    src={o.imgPath}
-                    alt={o.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                */}
-                <div
-                  className="w-full h-full group-hover:scale-105 transition-transform duration-500 rounded-2xl"
-                  style={{ background: o.gradient }}
+                <img
+                  src={o.imgSrc}
+                  alt={o.imgAlt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 

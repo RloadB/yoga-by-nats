@@ -6,28 +6,12 @@ export default function About() {
 
           {/* Image */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
-            {/*
-              TODO: When photo is ready, replace with:
-              <img
-                src="/images/natalia/natalia-about.jpg"
-                alt="Natalia — yoga teacher in Antwerp"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'linear-gradient(175deg, #C9A57A 0%, #A07850 40%, #7A5838 80%, #5C3E28 100%)',
-              }}
-            >
-              <div className="absolute inset-0 flex flex-col items-center justify-end pb-12">
-                <div className="w-10 h-px bg-white/25 mb-4" />
-                <p className="font-serif italic text-white/35 text-sm tracking-widest">
-                  Antwerp
-                </p>
-              </div>
-            </div>
+            {/* TODO: Replace with Natalia's real portrait photo when available — remove Unsplash temp image */}
+            <img
+              src="/images/natalia/natalia-about.jpg"
+              alt="Natalia — yoga teacher in Antwerp"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            />
           </div>
 
           {/* Text */}
