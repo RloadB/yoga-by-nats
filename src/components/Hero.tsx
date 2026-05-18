@@ -8,39 +8,36 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover object-[center_30%]"
       />
 
-      {/* Overlays */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_30%_55%,transparent_0%,rgba(42,31,26,0.25)_60%,rgba(42,31,26,0.62)_100%)]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-brown/28 via-transparent to-transparent" />
+      {/* Overlays — darken edges, protect center */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,transparent_0%,rgba(42,31,26,0.22)_60%,rgba(42,31,26,0.65)_100%)]" />
       <div className="absolute inset-0 bg-gradient-to-t from-brown/55 via-transparent to-transparent" />
 
-      {/* Content — same horizontal grid as every other section */}
-      <div className="relative h-full flex flex-col justify-center px-8 md:px-12 lg:px-20 xl:px-28">
-        <div className="max-w-xl lg:max-w-2xl">
-          <p className="font-sans text-cream/50 text-[10px] tracking-[0.38em] uppercase mb-7">
-            Yoga By Nats &nbsp;·&nbsp; Antwerp
-          </p>
-          <h1 className="font-serif font-light text-cream text-[44px] md:text-6xl lg:text-[72px] leading-[1.02] mb-10">
-            A soft space for
-            <br />
-            movement, breath
-            <br />
-            and ritual.
-          </h1>
-          <div className="flex flex-wrap items-center gap-5">
-            {/* TODO: Replace href="#booking" with https://app.zenamu.com/yogabynats */}
-            <a
-              href="#booking"
-              className="font-sans font-light text-sm text-cream border border-cream/35 px-7 py-3 rounded-full hover:bg-cream/10 transition-all duration-300 tracking-wide"
-            >
-              Book a class
-            </a>
-            <a
-              href="#classes"
-              className="font-sans font-light text-cream/55 text-sm tracking-wide hover:text-cream/85 transition-colors duration-300"
-            >
-              Explore classes
-            </a>
-          </div>
+      {/* Content — truly centered */}
+      <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
+        <p className="font-sans text-cream/50 text-[10px] tracking-[0.38em] uppercase mb-7">
+          Yoga By Nats &nbsp;·&nbsp; Antwerp
+        </p>
+        <h1 className="font-serif font-light text-cream text-[44px] md:text-6xl lg:text-[72px] leading-[1.02] mb-10 max-w-3xl">
+          A soft space for
+          <br />
+          movement, breath
+          <br />
+          and ritual.
+        </h1>
+        <div className="flex flex-wrap items-center justify-center gap-5">
+          {/* TODO: Replace href="#booking" with https://app.zenamu.com/yogabynats */}
+          <a
+            href="#booking"
+            className="font-sans font-light text-sm text-cream border border-cream/35 px-7 py-3 rounded-full hover:bg-cream/10 transition-all duration-300 tracking-wide"
+          >
+            Book a class
+          </a>
+          <a
+            href="#classes"
+            className="font-sans font-light text-cream/55 text-sm tracking-wide hover:text-cream/85 transition-colors duration-300"
+          >
+            Explore classes
+          </a>
         </div>
       </div>
     </section>

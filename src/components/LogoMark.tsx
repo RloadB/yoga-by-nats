@@ -4,26 +4,44 @@ interface Props {
 }
 
 export default function LogoMark({ size = 32, className = '' }: Props) {
-  const height = Math.round(size * 46 / 40)
+  const height = Math.round(size * 90 / 100)
   return (
     <svg
       width={size}
       height={height}
-      viewBox="0 0 40 46"
+      viewBox="0 0 100 90"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-hidden="true"
     >
-      <line x1="20" y1="11" x2="20" y2="3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
-      <line x1="25" y1="13" x2="28" y2="6" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
-      <line x1="28" y1="17" x2="33" y2="12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
-      <line x1="15" y1="13" x2="12" y2="6" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
-      <line x1="12" y1="17" x2="7" y2="12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
-      <ellipse cx="20" cy="24" rx="10" ry="13" stroke="currentColor" strokeWidth="1.3"/>
+      {/* Crown rays */}
+      <line x1="50" y1="14" x2="51" y2="3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+      <line x1="54" y1="15" x2="59" y2="4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+      <line x1="58" y1="17" x2="66" y2="7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+      <line x1="62" y1="22" x2="72" y2="14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+      <line x1="64" y1="28" x2="75" y2="22" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+      <line x1="46" y1="15" x2="41" y2="4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+      <line x1="42" y1="17" x2="34" y2="7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+      <line x1="38" y1="22" x2="28" y2="14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+      <line x1="36" y1="28" x2="25" y2="22" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+
+      {/* Head profile — left-facing */}
       <path
-        d="M 20 20 C 21.5 18.5, 23 19.5, 23 21 C 23 22.5, 21.5 24, 20 24 C 18.5 24, 17 22.5, 17 21 C 17 19, 18.5 17.5, 20.5 17.5 C 23 17.5, 25 20, 24.5 22.5"
-        stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"
+        d="M50,14 C38,13 27,23 25,38 C23,46 24,52 27,56 L24,58 L29,62 C31,66 35,70 39,73 C43,75 47,76 50,76 L50,83 L54,83 L54,76 C59,75 66,70 69,63 C73,54 73,41 69,30 C65,20 58,14 50,14 Z"
+        stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinejoin="round"
+      />
+
+      {/* Large 2-turn spiral */}
+      <path
+        d="M57,40 C59,37 63,38 63,41 C63,44 61,47 57,47 C54,47 51,44 51,41 C51,37 54,33 58,33 C63,33 67,37 67,42 C67,48 63,53 57,54 C50,55 45,51 45,45"
+        stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round"
+      />
+
+      {/* Small curl — lower back of head */}
+      <path
+        d="M55,65 C53,62 50,62 50,65 C50,68 53,70 56,68 C59,66 58,62 55,62"
+        stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="round"
       />
     </svg>
   )
