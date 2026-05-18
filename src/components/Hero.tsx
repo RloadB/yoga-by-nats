@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative h-[88vh] min-h-[580px]">
+    <section className="relative h-screen min-h-[700px]">
       {/* TODO: Replace with Natalia's real photo */}
       <img
         src="/images/natalia/natalia-hero.jpg"
@@ -14,7 +14,7 @@ export default function Hero() {
 
       {/* Content — centered */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-        <h1 className="font-serif font-light text-cream text-[44px] md:text-6xl lg:text-[72px] leading-[1.02] mb-10">
+        <h1 className="font-serif font-light text-cream text-[56px] md:text-7xl lg:text-[96px] xl:text-[110px] leading-[1.02] mb-12">
           A soft space for movement,
           <br />
           breath and ritual.

@@ -14,7 +14,7 @@ export default function About() {
         </div>
 
         {/* Text — right column, generous padding, max-width on text only */}
-        <div className="flex flex-col justify-center px-8 md:px-12 lg:px-16 xl:px-20 py-16 lg:py-24">
+        <div className="flex flex-col justify-center pl-10 md:pl-16 lg:pl-24 xl:pl-32 pr-8 md:pr-12 lg:pr-16 xl:pr-20 py-16 lg:py-24">
           <div className="max-w-md">
             <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-6">
               About

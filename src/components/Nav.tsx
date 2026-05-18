@@ -24,7 +24,7 @@ export default function Nav() {
         onHero ? 'bg-transparent' : 'bg-cream/95 backdrop-blur-md border-b border-cream-dark'
       }`}
     >
-      <div className="px-8 md:px-12 lg:px-20 xl:px-28 h-16 flex items-center justify-between">
+      <div className="px-8 md:px-12 lg:px-20 xl:px-28 h-24 flex items-center justify-between">
 
         {/* Logo — actual brand image, inverted to white on hero */}
         <a href="#">
@@ -32,7 +32,7 @@ export default function Nav() {
             src="/logo/logo.png"
             alt="Yoga By Nats"
             style={{
-              height: '44px',
+              height: '88px',
               width: 'auto',
               filter: onHero ? 'brightness(0) invert(1)' : 'brightness(0)',
               transition: 'filter 0.5s',

@@ -14,7 +14,7 @@ export default function Classes() {
 
       {/* Block 1: Hatha — text left, image right, full-bleed */}
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:min-h-[580px]">
-        <div className="flex flex-col justify-center px-8 md:px-12 lg:px-20 xl:px-28 py-14 lg:py-0">
+        <div className="flex flex-col justify-center pl-8 md:pl-12 lg:pl-20 xl:pl-28 pr-10 md:pr-16 lg:pr-24 xl:pr-32 py-14 lg:py-0">
           <div className="max-w-md">
             <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-4">
               Weekly classes
