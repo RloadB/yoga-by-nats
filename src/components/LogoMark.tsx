@@ -1,0 +1,30 @@
+interface Props {
+  size?: number
+  className?: string
+}
+
+export default function LogoMark({ size = 32, className = '' }: Props) {
+  const height = Math.round(size * 46 / 40)
+  return (
+    <svg
+      width={size}
+      height={height}
+      viewBox="0 0 40 46"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      aria-hidden="true"
+    >
+      <line x1="20" y1="11" x2="20" y2="3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+      <line x1="25" y1="13" x2="28" y2="6" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+      <line x1="28" y1="17" x2="33" y2="12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+      <line x1="15" y1="13" x2="12" y2="6" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+      <line x1="12" y1="17" x2="7" y2="12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+      <ellipse cx="20" cy="24" rx="10" ry="13" stroke="currentColor" strokeWidth="1.3"/>
+      <path
+        d="M 20 20 C 21.5 18.5, 23 19.5, 23 21 C 23 22.5, 21.5 24, 20 24 C 18.5 24, 17 22.5, 17 21 C 17 19, 18.5 17.5, 20.5 17.5 C 23 17.5, 25 20, 24.5 22.5"
+        stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"
+      />
+    </svg>
+  )
+}

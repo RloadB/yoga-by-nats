@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
+import LogoMark from './LogoMark'
 
 const links = [
   { label: 'Classes', href: '#classes' },
   { label: 'About', href: '#about' },
-  { label: 'Workshops', href: '#workshops' },
+  { label: 'Workshops', href: '#classes' },
 ]
 
 export default function Nav() {
@@ -24,16 +25,20 @@ export default function Nav() {
         onHero ? 'bg-transparent' : 'bg-cream/95 backdrop-blur-md border-b border-cream-dark'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-10 h-14 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+
+        {/* Brand — logo mark + wordmark */}
         <a
           href="#"
-          className={`font-serif text-xl tracking-wide transition-colors duration-500 ${
+          className={`flex items-center gap-3 transition-colors duration-500 ${
             onHero ? 'text-cream' : 'text-forest'
           }`}
         >
-          Yoga By Nats
+          <LogoMark size={26} />
+          <span className="font-serif text-xl tracking-wide">Yoga By Nats</span>
         </a>
 
+        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <a
@@ -61,6 +66,7 @@ export default function Nav() {
           </a>
         </nav>
 
+        {/* Mobile hamburger */}
         <button
           className="md:hidden p-1"
           onClick={() => setMenuOpen((o) => !o)}

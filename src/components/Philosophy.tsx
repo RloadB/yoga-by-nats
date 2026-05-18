@@ -15,46 +15,36 @@ const pillars = [
 
 export default function Philosophy() {
   return (
-    <section className="bg-forest py-24 lg:py-32">
+    <section className="bg-forest py-24 lg:py-36">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
 
-        {/* Central statement — left aligned, editorial */}
-        <div className="mb-20 lg:mb-28 max-w-3xl">
-          <h2 className="font-serif font-light text-cream text-5xl md:text-6xl lg:text-[68px] leading-[1.02] mb-8">
+        {/* Central statement */}
+        <div className="mb-20 lg:mb-28 max-w-2xl">
+          <h2 className="font-serif font-light text-cream text-4xl md:text-5xl lg:text-[58px] leading-[1.05] mb-7">
             Not a gym class.
             <br />
             Not a performance.
           </h2>
-          <p className="font-sans text-cream/55 text-lg leading-relaxed max-w-xl">
+          <p className="font-sans text-cream/50 text-base leading-relaxed">
             This is yoga as a soft landing. You do not need to be flexible,
             experienced or perfect. You simply arrive as you are.
           </p>
         </div>
 
-        {/* Numbered editorial list */}
-        <div className="divide-y divide-white/10">
-          {pillars.map((p, i) => (
-            <div
-              key={p.title}
-              className="py-8 md:py-10 flex items-start gap-8 md:gap-16"
-            >
-              {/* Number */}
-              <span className="font-serif text-white/20 text-sm shrink-0 mt-1 w-6">
-                0{i + 1}
-              </span>
-
-              {/* Content — two-column on md+ */}
-              <div className="flex-1 md:flex md:items-start md:gap-12">
-                <h3 className="font-serif text-xl md:text-2xl text-cream mb-3 md:mb-0 md:w-56 shrink-0 leading-snug">
-                  {p.title}
-                </h3>
-                <p className="font-sans text-cream/50 text-sm leading-relaxed">
-                  {p.body}
-                </p>
-              </div>
+        {/* Three editorial cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
+          {pillars.map((p) => (
+            <div key={p.title} className="border-t border-white/15 pt-8">
+              <h3 className="font-serif text-xl text-cream mb-4 leading-snug">
+                {p.title}
+              </h3>
+              <p className="font-sans text-cream/45 text-sm leading-relaxed">
+                {p.body}
+              </p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   )

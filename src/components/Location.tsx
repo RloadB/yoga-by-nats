@@ -12,45 +12,45 @@ export default function Location() {
               Based in Antwerp
             </h2>
             <p className="font-sans text-brown-light text-base leading-relaxed mb-5">
-              Classes and workshops are created for people in Antwerp and nearby
-              who are looking for something more grounded and intimate.
+              I offer yoga in Antwerp for people looking for something more
+              grounded and intimate — not a big studio, not a fitness class. A
+              softer, more personal space.
+            </p>
+            <p className="font-sans text-brown-light text-base leading-relaxed mb-5">
+              My weekly Hatha yoga classes in Antwerp are open to all levels,
+              taught in English and Dutch. Throughout the year I also run
+              spiritual yoga workshops in Antwerp — moon rituals and seasonal
+              gatherings rooted in traditional practice.
             </p>
             <p className="font-sans text-brown-light text-base leading-relaxed">
-              Whether you are new to{' '}
-              <strong className="text-forest font-medium">yoga in Antwerp</strong> or
-              already have a practice,
-              there is space here for you. Natalia teaches{' '}
-              <strong className="text-forest font-medium">Hatha yoga in Antwerp</strong>{' '}
-              weekly, with{' '}
-              <strong className="text-forest font-medium">spiritual yoga Antwerp</strong>{' '}
-              workshops throughout the year. Classes in English and Dutch —{' '}
-              <em className="text-forest/60">yoga Antwerpen</em>.
+              Whether you are new to yoga in Antwerpen or already have a practice,
+              there is always room for you here.
             </p>
           </div>
 
-          {/* Minimal keyword list */}
-          <div className="flex flex-col gap-4 lg:pt-4">
-            {[
-              { label: 'Yoga Antwerp', sub: 'Weekly Hatha classes' },
-              { label: 'Yoga Antwerpen', sub: 'Available in Dutch' },
-              { label: 'Hatha Yoga Antwerp', sub: 'Traditional practice, all levels' },
-              { label: 'Spiritual Yoga Antwerp', sub: 'Ritual, breathwork & presence' },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="flex items-center gap-4 py-3 border-b border-brown/[8%]"
-              >
-                <div className="w-1 h-1 rounded-full bg-terracotta/50 shrink-0" />
-                <div>
-                  <p className="font-sans text-forest text-sm font-medium leading-tight">
-                    {item.label}
-                  </p>
-                  <p className="font-sans text-brown-light/60 text-xs mt-0.5">
-                    {item.sub}
-                  </p>
-                </div>
-              </div>
-            ))}
+          <div className="lg:pt-4">
+            <div className="border-t border-brown/[8%] pt-8">
+              <p className="font-sans text-brown-light/40 text-[11px] tracking-[0.3em] uppercase mb-6">
+                Details
+              </p>
+              <dl className="space-y-5">
+                {[
+                  { term: 'Location', def: 'Antwerp, Belgium' },
+                  { term: 'Languages', def: 'English & Dutch' },
+                  { term: 'Weekly classes', def: 'Hatha yoga, all levels' },
+                  { term: 'Workshops', def: 'Moon rituals & seasonal gatherings' },
+                ].map(({ term, def }) => (
+                  <div key={term} className="flex gap-6">
+                    <dt className="font-sans text-xs text-brown-light/40 w-32 shrink-0 pt-0.5">
+                      {term}
+                    </dt>
+                    <dd className="font-sans text-sm text-forest leading-snug">
+                      {def}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
         </div>
       </div>
