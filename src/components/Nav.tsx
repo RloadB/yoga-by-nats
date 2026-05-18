@@ -25,9 +25,9 @@ export default function Nav() {
         onHero ? 'bg-transparent' : 'bg-cream/95 backdrop-blur-md border-b border-cream-dark'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+      {/* Same padding as all page sections */}
+      <div className="px-8 md:px-12 lg:px-20 xl:px-28 h-16 flex items-center justify-between">
 
-        {/* Brand — logo mark + wordmark */}
         <a
           href="#"
           className={`flex items-center gap-3 transition-colors duration-500 ${
@@ -38,22 +38,19 @@ export default function Nav() {
           <span className="font-serif text-xl tracking-wide">Yoga By Nats</span>
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <a
               key={l.label}
               href={l.href}
               className={`font-sans font-light text-sm tracking-wide transition-colors duration-500 ${
-                onHero
-                  ? 'text-cream/70 hover:text-cream'
-                  : 'text-brown-light hover:text-forest'
+                onHero ? 'text-cream/70 hover:text-cream' : 'text-brown-light hover:text-forest'
               }`}
             >
               {l.label}
             </a>
           ))}
-          {/* TODO: Replace href="#booking" with Zenamu URL: https://app.zenamu.com/yogabynats */}
+          {/* TODO: Replace href="#booking" with https://app.zenamu.com/yogabynats */}
           <a
             href="#booking"
             className={`font-sans font-light text-sm tracking-wide px-5 py-2 rounded-full transition-all duration-500 ${
@@ -66,7 +63,6 @@ export default function Nav() {
           </a>
         </nav>
 
-        {/* Mobile hamburger */}
         <button
           className="md:hidden p-1"
           onClick={() => setMenuOpen((o) => !o)}
@@ -90,7 +86,7 @@ export default function Nav() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-cream border-t border-cream-dark px-6 py-6 flex flex-col gap-5">
+        <div className="md:hidden bg-cream border-t border-cream-dark px-8 py-6 flex flex-col gap-5">
           {links.map((l) => (
             <a
               key={l.label}
