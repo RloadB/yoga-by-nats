@@ -1,6 +1,6 @@
 export default function BookingCTA() {
   return (
-    <section id="booking" className="bg-cream py-28 lg:py-40">
+    <section id="booking" className="bg-cream py-24 lg:py-32">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
 
         {/* Thin rule */}

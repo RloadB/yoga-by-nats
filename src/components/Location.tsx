@@ -38,7 +38,7 @@ export default function Location() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="flex items-center gap-4 py-3 border-b border-brown/8"
+                className="flex items-center gap-4 py-3 border-b border-brown/[8%]"
               >
                 <div className="w-1 h-1 rounded-full bg-terracotta/50 shrink-0" />
                 <div>

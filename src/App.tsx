@@ -2,6 +2,7 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
 import Classes from './components/Classes'
+import PracticeStatement from './components/PracticeStatement'
 import Philosophy from './components/Philosophy'
 import BookingCTA from './components/BookingCTA'
 import Location from './components/Location'
@@ -15,6 +16,7 @@ export default function App() {
         <Hero />
         <About />
         <Classes />
+        <PracticeStatement />
         <Philosophy />
         <BookingCTA />
         <Location />
