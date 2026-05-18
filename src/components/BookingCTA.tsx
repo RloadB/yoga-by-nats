@@ -1,24 +1,38 @@
 export default function BookingCTA() {
   return (
-    <section id="booking" className="bg-cream-dark py-24 lg:py-32">
-      <div className="max-w-xl mx-auto px-6 text-center">
-        <p className="font-sans text-terracotta text-[11px] tracking-[0.3em] uppercase mb-4">
-          Join a session
-        </p>
-        <h2 className="font-serif text-4xl md:text-5xl text-forest leading-[1.12] mb-6">
-          Ready to join a class?
-        </h2>
-        <p className="font-sans text-brown-light text-base md:text-lg leading-relaxed mb-10">
-          Bookings are handled through Natalia's Zenamu schedule. Find available dates
-          and reserve your spot directly.
-        </p>
-        {/* TODO: Replace href="#" with Zenamu URL: https://app.zenamu.com/yogabynats */}
-        <a
-          href="#"
-          className="inline-flex items-center justify-center bg-forest text-cream font-sans font-medium text-sm tracking-wide px-10 py-4 rounded-full hover:bg-forest-light transition-colors duration-300"
-        >
-          Open booking page
-        </a>
+    <section id="booking" className="bg-cream py-28 lg:py-40">
+      <div className="max-w-5xl mx-auto px-6 md:px-10">
+
+        {/* Thin rule */}
+        <div className="w-12 h-px bg-terracotta/40 mb-12" />
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+          <div>
+            <p className="font-sans text-terracotta text-[11px] tracking-[0.3em] uppercase mb-5">
+              Join a session
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl text-forest leading-[1.1]">
+              Ready to step onto the mat?
+            </h2>
+          </div>
+
+          <div>
+            <p className="font-sans text-brown-light text-base leading-relaxed mb-8">
+              Bookings are handled through Natalia's Zenamu schedule.
+              Find available dates and reserve your spot directly — no account needed.
+            </p>
+            {/* TODO: Replace href="#" with Zenamu URL: https://app.zenamu.com/yogabynats */}
+            <a
+              href="#"
+              className="inline-flex items-center gap-3 font-sans text-sm text-forest border-b border-forest/30 pb-0.5 hover:border-forest transition-colors duration-300"
+            >
+              Open booking page
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   )
