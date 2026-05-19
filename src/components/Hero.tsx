@@ -4,7 +4,7 @@ export default function Hero() {
       {/* TODO: Replace with Natalia's real photo */}
       <img
         src="/images/natalia/natalia-hero.jpg"
-        alt="Yoga By Nats — grounded yoga practice in Antwerp"
+        alt="Yoga By Nats, grounded yoga practice in Antwerp"
         className="absolute inset-0 w-full h-full object-cover object-[center_30%]"
       />
 
@@ -12,9 +12,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,transparent_0%,rgba(42,31,26,0.22)_60%,rgba(42,31,26,0.65)_100%)]" />
       <div className="absolute inset-0 bg-gradient-to-t from-brown/55 via-transparent to-transparent" />
 
-      {/* Content — centered */}
-      <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-        <h1 className="font-serif font-light text-cream text-[56px] md:text-7xl lg:text-[96px] xl:text-[110px] leading-[1.02] mb-12">
+      {/* Content: centered */}
+      <div className="relative site-container h-full flex flex-col items-center justify-center text-center pt-20">
+        <h1 className="font-serif font-light text-cream text-[52px] md:text-7xl lg:text-[92px] xl:text-[104px] leading-[1.02] mb-10 max-w-5xl">
           A soft space for movement,
           <br />
           breath and ritual.

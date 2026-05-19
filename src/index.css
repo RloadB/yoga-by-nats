@@ -30,3 +30,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.site-container {
+  width: min(100% - 2rem, 1240px);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .site-container {
+    width: min(100% - 4rem, 1240px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .site-container {
+    width: min(100% - 6rem, 1240px);
+  }
+}

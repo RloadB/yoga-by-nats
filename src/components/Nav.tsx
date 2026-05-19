@@ -24,9 +24,9 @@ export default function Nav() {
         onHero ? 'bg-transparent' : 'bg-cream/95 backdrop-blur-md border-b border-cream-dark'
       }`}
     >
-      <div className="px-8 md:px-12 lg:px-20 xl:px-28 h-24 flex items-center justify-between">
+      <div className="site-container h-24 flex items-center justify-between">
 
-        {/* Logo — actual brand image, inverted to white on hero */}
+        {/* Logo: actual brand image, inverted to white on hero */}
         <a href="#">
           <img
             src="/logo/logo.png"
