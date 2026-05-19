@@ -1,9 +1,18 @@
 export default function Footer() {
   return (
     <footer className="bg-brown">
-      <div className="site-container pt-20 lg:pt-28 pb-10 lg:pb-14">
+      <div className="site-container pt-24 lg:pt-32 pb-10 lg:pb-14">
 
-        <div className="grid grid-cols-1 md:grid-cols-[1.4fr_0.8fr_0.8fr] gap-12 lg:gap-20 mb-16 lg:mb-20">
+        <div className="mb-16 border-b border-white/[8%] pb-16 lg:mb-20 lg:pb-20">
+          <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-7">
+            Yoga By Nats
+          </p>
+          <p className="font-serif text-5xl md:text-6xl lg:text-[86px] text-cream leading-[0.98] max-w-5xl">
+            A softer rhythm for movement, ritual and presence in Antwerp.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-[1.3fr_0.75fr_0.75fr] gap-12 lg:gap-20 mb-16 lg:mb-20">
           <div>
             <img
               src="/logo/logo.png"
@@ -14,11 +23,8 @@ export default function Footer() {
                 filter: 'brightness(0) invert(1)',
                 opacity: 0.72,
               }}
-              className="mb-6"
+              className="mb-7"
             />
-            <p className="font-serif text-3xl md:text-4xl text-cream leading-tight max-w-md mb-6">
-              A softer rhythm for movement, ritual and presence in Antwerp.
-            </p>
             <p className="font-sans text-cream/42 text-sm leading-relaxed max-w-sm">
               I created this space for slower practice, quiet breath and a more
               grounded way to return to yourself.
@@ -48,8 +54,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        <div className="border-t border-white/[8%] mb-10" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <p className="font-sans text-cream/20 text-xs tracking-wide">

@@ -1,18 +1,14 @@
 export default function PracticeStatement() {
   return (
-    <section className="bg-cream py-20 lg:py-28">
+    <section className="bg-cream py-20 lg:py-32">
       <div className="site-container">
-        <div className="border-t border-brown/10 pt-14 lg:pt-20">
-          <div className="max-w-xl mx-auto text-center">
-            <h2 className="font-serif text-3xl md:text-4xl text-forest leading-[1.15] mb-5">
-              A practice that meets you where you are
-            </h2>
-            <p className="font-sans text-brown-light text-base leading-relaxed">
-              Whether you come for movement, rest, ritual or simply a quiet moment
-              in your week, each session is created to feel welcoming, grounded
-              and personal.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[0.82fr_1.18fr] gap-10 lg:gap-20 items-center border-y border-brown/10 py-14 lg:py-20">
+          <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase">
+            The rhythm
+          </p>
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-[66px] text-forest leading-[1.03] max-w-4xl">
+            I keep the practice spacious, honest and close to the body.
+          </h2>
         </div>
       </div>
     </section>

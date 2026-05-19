@@ -4,13 +4,15 @@ export default function Classes() {
 
       {/* Section header */}
       <div className="site-container mb-14 lg:mb-20">
-        <div className="max-w-2xl">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-end">
+          <div>
           <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-4">
             What to expect
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-[58px] text-forest leading-[1.06] mb-6">
             Classes &amp; workshops with room to breathe
           </h2>
+          </div>
           <p className="font-sans text-brown-light text-base leading-relaxed max-w-lg">
             My classes are soft, steady and personal. I keep the pace spacious so
             you can listen inward, move with care and leave feeling more present.
@@ -18,10 +20,10 @@ export default function Classes() {
         </div>
       </div>
 
-      <div className="site-container space-y-16 lg:space-y-24">
+      <div className="site-container space-y-20 lg:space-y-28">
         {/* Block 1: Hatha */}
         <div className="grid grid-cols-1 lg:grid-cols-[0.86fr_1.14fr] gap-8 lg:gap-14 items-center">
-          <div className="bg-cream px-8 py-10 md:px-12 md:py-14 lg:translate-x-8 z-10">
+          <div className="bg-cream px-8 py-10 md:px-12 md:py-14 lg:translate-x-12 z-10 shadow-[0_24px_70px_rgba(42,31,26,0.08)]">
             <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-4">
               Weekly classes
             </p>
@@ -38,7 +40,7 @@ export default function Classes() {
             </p>
           </div>
           {/* TODO: Replace with Natalia's real photo */}
-          <div className="relative aspect-[4/5] lg:aspect-[16/11] overflow-hidden">
+          <div className="relative aspect-[4/5] lg:aspect-[16/10] overflow-hidden">
             <img
               src="/images/natalia/natalia-hatha.jpg"
               alt="Hatha Yoga at Yoga By Nats in Antwerp"
@@ -50,14 +52,14 @@ export default function Classes() {
         {/* Block 2: Moon Workshops */}
         <div className="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 lg:gap-14 items-center">
           {/* TODO: Replace with Natalia's real photo */}
-          <div className="relative aspect-[4/5] lg:aspect-[16/12] overflow-hidden order-last lg:order-first">
+          <div className="relative aspect-[4/5] lg:aspect-[16/10] overflow-hidden order-last lg:order-first">
             <img
               src="/images/natalia/natalia-ritual.jpg"
               alt="Moon and ritual workshop at Yoga By Nats"
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
           </div>
-          <div className="bg-cream px-8 py-10 md:px-12 md:py-14 lg:-translate-x-8 z-10 order-first lg:order-last">
+          <div className="bg-cream px-8 py-10 md:px-12 md:py-14 lg:-translate-x-12 z-10 order-first lg:order-last shadow-[0_24px_70px_rgba(42,31,26,0.08)]">
             <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-4">
               Monthly workshops
             </p>
@@ -78,7 +80,7 @@ export default function Classes() {
 
         {/* Block 3: Private Sessions */}
         <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-8 lg:gap-14 items-center">
-          <div className="bg-forest text-cream px-8 py-10 md:px-12 md:py-14 lg:translate-x-8 z-10">
+          <div className="bg-forest text-cream px-8 py-10 md:px-12 md:py-14 lg:translate-x-12 z-10 shadow-[0_24px_70px_rgba(42,31,26,0.12)]">
             <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-5">
               Personal practice
             </p>
@@ -95,7 +97,7 @@ export default function Classes() {
             </p>
           </div>
           {/* TODO: Replace with Natalia's real photo */}
-          <div className="relative aspect-[4/5] lg:aspect-[16/11] overflow-hidden">
+          <div className="relative aspect-[4/5] lg:aspect-[16/10] overflow-hidden">
             <img
               src="/images/natalia/natalia-private.jpg"
               alt="Private yoga session at Yoga By Nats"

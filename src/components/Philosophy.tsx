@@ -15,36 +15,42 @@ const pillars = [
 
 export default function Philosophy() {
   return (
-    <section className="bg-forest py-24 lg:py-36">
+    <section className="relative overflow-hidden bg-forest py-24 lg:py-40">
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-cream to-transparent opacity-10" />
       <div className="site-container">
 
-        {/* Two-column: heading left, stacked items right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-16 lg:gap-24 items-start">
 
           {/* Left: editorial statement */}
-          <div className="lg:pt-2">
-            <h2 className="font-serif font-light text-cream text-4xl md:text-5xl lg:text-[56px] leading-[1.05] mb-8">
+          <div className="lg:sticky lg:top-32">
+            <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-7">
+              Philosophy
+            </p>
+            <h2 className="font-serif font-light text-cream text-5xl md:text-6xl lg:text-[82px] leading-[0.98] mb-9">
               Not a gym class.
               <br />
               Not a performance.
             </h2>
-            <p className="font-sans text-cream/50 text-base leading-relaxed max-w-sm">
-              This is yoga as a soft landing. You do not need to be flexible,
-              experienced or perfect. You simply arrive as you are.
+            <p className="font-sans text-cream/58 text-base leading-relaxed max-w-md">
+              I teach yoga as a soft landing. You do not need to be flexible,
+              experienced or perfect. You only need enough space to arrive.
             </p>
           </div>
 
           {/* Right: soft editorial notes */}
-          <div className="grid gap-5">
+          <div className="grid gap-6 lg:pt-10">
             {pillars.map((p, i) => (
               <div
                 key={p.title}
-                className={`bg-cream/[0.06] px-7 py-8 ${i === 1 ? 'lg:translate-x-8' : ''} ${i === 2 ? 'lg:translate-x-16' : ''}`}
+                className={`bg-cream/[0.07] px-8 py-9 md:px-10 md:py-11 backdrop-blur-sm ${i === 1 ? 'lg:-translate-x-8' : ''} ${i === 2 ? 'lg:translate-x-8' : ''}`}
               >
-                <h3 className="font-serif text-xl text-cream mb-3 leading-snug">
+                <p className="font-sans text-cream/24 text-[10px] tracking-[0.3em] uppercase mb-5">
+                  0{i + 1}
+                </p>
+                <h3 className="font-serif text-3xl text-cream mb-4 leading-snug">
                   {p.title}
                 </h3>
-                <p className="font-sans text-cream/45 text-sm leading-relaxed">
+                <p className="font-sans text-cream/52 text-sm leading-relaxed">
                   {p.body}
                 </p>
               </div>
