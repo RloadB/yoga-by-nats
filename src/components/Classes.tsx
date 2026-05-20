@@ -1,19 +1,18 @@
 export default function Classes() {
   return (
-    <section id="classes" className="bg-cream-dark py-20 lg:py-32">
+    <section id="classes" className="section-space bg-cream-dark">
 
-      {/* Section header */}
-      <div className="site-container mb-14 lg:mb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-end">
+      <div className="site-container mb-16 lg:mb-24">
+        <div className="grid grid-cols-1 items-end gap-9 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <div>
-          <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-4">
+          <p className="mb-5 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
             What to expect
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-[58px] text-forest leading-[1.06] mb-6">
+          <h2 className="max-w-[680px] font-serif text-[clamp(2.55rem,4.8vw,4.3rem)] leading-[1.06] text-forest">
             Classes &amp; workshops with room to breathe
           </h2>
           </div>
-          <p className="font-sans text-brown-light text-base leading-relaxed max-w-lg">
+          <p className="max-w-[34rem] font-sans text-base leading-[1.85] text-brown-light lg:justify-self-end">
             My classes are soft, steady and personal. I keep the pace spacious so
             you can listen inward, move with care and leave feeling more present.
           </p>
@@ -21,87 +20,81 @@ export default function Classes() {
       </div>
 
       <div className="site-container space-y-20 lg:space-y-28">
-        {/* Block 1: Hatha */}
-        <div className="grid grid-cols-1 lg:grid-cols-[0.86fr_1.14fr] gap-8 lg:gap-14 items-center">
-          <div className="bg-cream px-8 py-10 md:px-12 md:py-14 lg:translate-x-12 z-10 shadow-[0_24px_70px_rgba(42,31,26,0.08)]">
-            <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-4">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-0">
+          <div className="z-10 bg-cream px-8 py-10 shadow-[0_24px_80px_rgba(42,31,26,0.08)] md:px-12 md:py-14 lg:translate-x-10">
+            <p className="mb-5 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
               Weekly classes
             </p>
-            <h3 className="font-serif text-3xl md:text-4xl text-forest leading-snug mb-6">
+            <h3 className="mb-6 font-serif text-[clamp(2rem,3vw,2.8rem)] leading-[1.12] text-forest">
               Hatha Yoga
             </h3>
-            <p className="font-sans text-brown-light text-base leading-relaxed mb-7">
+            <p className="mb-8 font-sans text-base leading-[1.85] text-brown-light">
               I hold weekly Hatha yoga classes for all levels: grounded in breath,
               gentle alignment and the simple pleasure of slowing down. No experience
               needed. You simply show up, and I'll meet you where you are.
             </p>
-            <p className="font-sans text-forest/40 text-xs tracking-[0.25em] uppercase">
+            <p className="font-sans text-xs uppercase tracking-[0.25em] text-forest/40">
               Saturdays &nbsp;·&nbsp; Antwerp
             </p>
           </div>
-          {/* TODO: Replace with Natalia's real photo */}
-          <div className="relative aspect-[4/5] lg:aspect-[16/10] overflow-hidden">
+          <div className="relative aspect-[4/5] overflow-hidden lg:aspect-[16/10]">
             <img
               src="/images/natalia/natalia-hatha.jpg"
               alt="Hatha Yoga at Yoga By Nats in Antwerp"
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="absolute inset-0 h-full w-full object-cover object-center"
             />
           </div>
         </div>
 
-        {/* Block 2: Moon Workshops */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 lg:gap-14 items-center">
-          {/* TODO: Replace with Natalia's real photo */}
-          <div className="relative aspect-[4/5] lg:aspect-[16/10] overflow-hidden order-last lg:order-first">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-0">
+          <div className="relative order-last aspect-[4/5] overflow-hidden lg:order-first lg:aspect-[16/10]">
             <img
               src="/images/natalia/natalia-ritual.jpg"
               alt="Moon and ritual workshop at Yoga By Nats"
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="absolute inset-0 h-full w-full object-cover object-center"
             />
           </div>
-          <div className="bg-cream px-8 py-10 md:px-12 md:py-14 lg:-translate-x-12 z-10 order-first lg:order-last shadow-[0_24px_70px_rgba(42,31,26,0.08)]">
-            <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-4">
+          <div className="order-first z-10 bg-cream px-8 py-10 shadow-[0_24px_80px_rgba(42,31,26,0.08)] md:px-12 md:py-14 lg:order-last lg:-translate-x-10">
+            <p className="mb-5 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
               Monthly workshops
             </p>
-            <h3 className="font-serif text-3xl md:text-4xl text-forest leading-snug mb-6">
+            <h3 className="mb-6 font-serif text-[clamp(2rem,3vw,2.8rem)] leading-[1.12] text-forest">
               Moon &amp; Ritual Workshops
             </h3>
-            <p className="font-sans text-brown-light text-base leading-relaxed mb-7">
+            <p className="mb-8 font-sans text-base leading-[1.85] text-brown-light">
               Each month I create a small, intimate gathering woven around the moon
               cycle: a candlelit space for gentle movement, reflection and intention
               setting. A quieter, more spiritual side of practice that I find
               deeply nourishing.
             </p>
-            <p className="font-sans text-forest/40 text-xs tracking-[0.25em] uppercase">
+            <p className="font-sans text-xs uppercase tracking-[0.25em] text-forest/40">
               Monthly &nbsp;·&nbsp; Small groups
             </p>
           </div>
         </div>
 
-        {/* Block 3: Private Sessions */}
-        <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-8 lg:gap-14 items-center">
-          <div className="bg-forest text-cream px-8 py-10 md:px-12 md:py-14 lg:translate-x-12 z-10 shadow-[0_24px_70px_rgba(42,31,26,0.12)]">
-            <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-5">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:gap-0">
+          <div className="z-10 bg-forest px-8 py-10 text-cream shadow-[0_24px_80px_rgba(42,31,26,0.12)] md:px-12 md:py-14 lg:translate-x-10">
+            <p className="mb-5 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
               Personal practice
             </p>
-            <h3 className="font-serif text-3xl md:text-4xl text-cream leading-snug mb-6">
+            <h3 className="mb-6 font-serif text-[clamp(2rem,3vw,2.8rem)] leading-[1.12] text-cream">
               Private Sessions
             </h3>
-            <p className="font-sans text-cream/65 text-base leading-relaxed mb-7">
+            <p className="mb-8 font-sans text-base leading-[1.85] text-cream/65">
               For those who want a quieter, more tailored space, I offer private
               sessions for individuals or small groups. We work at your own rhythm,
               with full attention to what your body and mind actually need.
             </p>
-            <p className="font-sans text-cream/35 text-xs tracking-[0.25em] uppercase">
+            <p className="font-sans text-xs uppercase tracking-[0.25em] text-cream/35">
               Flexible &nbsp;·&nbsp; On request
             </p>
           </div>
-          {/* TODO: Replace with Natalia's real photo */}
-          <div className="relative aspect-[4/5] lg:aspect-[16/10] overflow-hidden">
+          <div className="relative aspect-[4/5] overflow-hidden lg:aspect-[16/10]">
             <img
               src="/images/natalia/natalia-private.jpg"
               alt="Private yoga session at Yoga By Nats"
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="absolute inset-0 h-full w-full object-cover object-center"
             />
           </div>
         </div>

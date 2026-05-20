@@ -1,49 +1,49 @@
 export default function Location() {
   return (
-    <section className="bg-cream-dark py-20 lg:py-32">
+    <section className="section-space bg-cream-dark">
       <div className="site-container">
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-16 items-stretch">
-          <div className="bg-cream px-8 py-12 md:px-12 lg:px-14 lg:py-16">
-            <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-6">
+        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
+          <div className="max-w-[650px]">
+            <p className="mb-6 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
               Location
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-[62px] text-forest leading-[1.03] mb-8">
+            <h2 className="mb-8 font-serif text-[clamp(2.55rem,5vw,4.25rem)] leading-[1.05] text-forest">
               Based in Antwerp
             </h2>
-            <p className="font-sans text-brown-light text-base leading-relaxed mb-5">
-              I offer yoga in Antwerp for people looking for a softer, more
-              grounded practice. My weekly Hatha yoga classes are open to all
-              levels, and my ritual workshops create space for reflection, breath
-              and presence.
+            <p className="mb-6 font-sans text-base leading-[1.85] text-brown-light">
+              I offer weekly practice in Antwerp for people who want a softer,
+              more grounded way to move. My Hatha classes are open to all levels,
+              and my ritual workshops create space for reflection, breath and
+              presence.
             </p>
-            <p className="font-sans text-brown-light text-base leading-relaxed">
+            <p className="font-sans text-base leading-[1.85] text-brown-light">
               I created this space for anyone who wants movement to feel intimate,
               steady and human. Come exactly as you are.
             </p>
           </div>
 
-          <div className="grid bg-forest px-8 py-12 text-cream md:px-12 lg:px-14 lg:py-16">
+          <div className="grid rounded-[1.25rem] bg-forest px-8 py-12 text-cream md:px-12 lg:px-14 lg:py-16">
             <div className="self-start">
-              <p className="font-sans text-terracotta text-[10px] tracking-[0.35em] uppercase mb-8">
+              <p className="mb-8 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
                 Details
               </p>
               <dl className="grid gap-7">
                 <div className="border-b border-cream/10 pb-6">
-                  <dt className="font-serif text-3xl text-cream leading-tight">Antwerp, Belgium</dt>
-                  <dd className="font-sans text-cream/52 text-sm mt-2">Local weekly practice</dd>
+                  <dt className="font-serif text-[clamp(1.65rem,3vw,2rem)] leading-tight text-cream">Antwerp, Belgium</dt>
+                  <dd className="mt-2 font-sans text-sm text-cream/52">Local weekly practice</dd>
                 </div>
                 <div className="border-b border-cream/10 pb-6">
-                  <dt className="font-serif text-3xl text-cream leading-tight">Classes in English</dt>
-                  <dd className="font-sans text-cream/52 text-sm mt-2">Welcoming for international students</dd>
+                  <dt className="font-serif text-[clamp(1.65rem,3vw,2rem)] leading-tight text-cream">Classes in English</dt>
+                  <dd className="mt-2 font-sans text-sm text-cream/52">Welcoming for international students</dd>
                 </div>
                 <div className="border-b border-cream/10 pb-6">
-                  <dt className="font-serif text-3xl text-cream leading-tight">Workshops on request</dt>
-                  <dd className="font-sans text-cream/52 text-sm mt-2">Moon rituals and seasonal gatherings</dd>
+                  <dt className="font-serif text-[clamp(1.65rem,3vw,2rem)] leading-tight text-cream">Workshops on request</dt>
+                  <dd className="mt-2 font-sans text-sm text-cream/52">Moon rituals and seasonal gatherings</dd>
                 </div>
                 <div>
-                  <dt className="font-serif text-3xl text-cream leading-tight">Private sessions available</dt>
-                  <dd className="font-sans text-cream/52 text-sm mt-2">For individuals and small groups</dd>
+                  <dt className="font-serif text-[clamp(1.65rem,3vw,2rem)] leading-tight text-cream">Private sessions available</dt>
+                  <dd className="mt-2 font-sans text-sm text-cream/52">For individuals and small groups</dd>
                 </div>
               </dl>
             </div>

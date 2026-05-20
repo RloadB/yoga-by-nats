@@ -1,41 +1,39 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[720px] overflow-hidden">
-      {/* TODO: Replace with Natalia's real photo */}
+    <section className="relative min-h-[700px] h-[100svh] overflow-hidden">
       <img
         src="/images/natalia/natalia-hero.jpg"
         alt="Yoga By Nats, grounded yoga practice in Antwerp"
-        className="absolute inset-0 w-full h-full scale-105 object-cover object-[center_32%]"
+        className="absolute inset-0 h-full w-full scale-105 object-cover object-[center_34%]"
       />
 
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_50%_52%,rgba(42,31,26,0.08)_0%,rgba(42,31,26,0.28)_56%,rgba(42,31,26,0.74)_100%)]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-brown/28 via-transparent to-brown/72" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_82%_72%_at_50%_48%,rgba(42,31,26,0.04)_0%,rgba(42,31,26,0.2)_55%,rgba(42,31,26,0.72)_100%)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-brown/34 via-brown/6 to-brown/78" />
       <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-cream to-transparent" />
 
-      <div className="relative site-container h-full flex flex-col items-center justify-center text-center pt-24">
-        <p className="font-sans text-cream/68 text-[10px] tracking-[0.42em] uppercase mb-7">
+      <div className="relative site-container flex h-full flex-col items-center justify-center pt-24 text-center">
+        <p className="mb-7 font-sans text-[10px] uppercase tracking-[0.42em] text-cream/70">
           Yoga · Ritual · Presence
         </p>
-        <h1 className="font-serif font-light text-cream text-[50px] md:text-7xl lg:text-[94px] xl:text-[108px] leading-[0.98] mb-8 max-w-5xl">
+        <h1 className="mb-8 max-w-[980px] font-serif text-[clamp(3.1rem,8vw,6.7rem)] font-light leading-[1.02] text-cream">
           A soft space for movement,
           <br />
           breath and ritual.
         </h1>
-        <p className="font-sans text-cream/70 text-base leading-relaxed max-w-md mb-10">
+        <p className="mb-10 max-w-[31rem] font-sans text-base leading-[1.85] text-cream/72">
           I guide grounding yoga and intimate rituals in Antwerp for people who
           want to move with more softness and presence.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
-          {/* TODO: Replace href="#booking" with https://app.zenamu.com/yogabynats */}
           <a
-            href="#booking"
-            className="font-sans font-light text-sm text-brown bg-cream px-7 py-3 rounded-full hover:bg-cream-dark transition-all duration-300 tracking-wide"
+            href="https://app.zenamu.com/yogabynats"
+            className="rounded-full bg-cream px-8 py-3.5 font-sans text-sm font-light tracking-wide text-brown transition-all duration-300 hover:bg-cream-dark"
           >
             Book a class
           </a>
           <a
             href="#classes"
-            className="font-sans font-light text-cream/66 text-sm tracking-wide border-b border-cream/25 pb-1 hover:text-cream hover:border-cream/65 transition-colors duration-300"
+            className="border-b border-cream/28 pb-1 font-sans text-sm font-light tracking-wide text-cream/70 transition-colors duration-300 hover:border-cream/65 hover:text-cream"
           >
             Explore classes
           </a>

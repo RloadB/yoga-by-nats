@@ -24,15 +24,14 @@ export default function Nav() {
         onHero ? 'bg-transparent' : 'bg-cream/95 backdrop-blur-md border-b border-cream-dark'
       }`}
     >
-      <div className="site-container h-20 md:h-24 flex items-center justify-between">
+      <div className="site-container flex h-20 items-center justify-between md:h-24">
 
-        {/* Logo: actual brand image, inverted to white on hero */}
-        <a href="#">
+        <a href="#" aria-label="Yoga By Nats home">
           <img
             src="/logo/logo.png"
             alt="Yoga By Nats"
             style={{
-              height: '72px',
+              height: '68px',
               width: 'auto',
               filter: onHero ? 'brightness(0) invert(1)' : 'brightness(0)',
               transition: 'filter 0.5s',
@@ -40,7 +39,7 @@ export default function Nav() {
           />
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
             <a
               key={l.label}
@@ -52,9 +51,8 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
-          {/* TODO: Replace href="#booking" with https://app.zenamu.com/yogabynats */}
           <a
-            href="#booking"
+            href="https://app.zenamu.com/yogabynats"
             className={`font-sans font-light text-sm tracking-wide px-5 py-2 rounded-full transition-all duration-500 ${
               onHero
                 ? 'border border-cream/30 text-cream hover:bg-cream/10'
@@ -100,7 +98,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="#booking"
+            href="https://app.zenamu.com/yogabynats"
             onClick={() => setMenuOpen(false)}
             className="font-sans text-sm bg-forest text-cream px-5 py-3 rounded-full text-center hover:bg-forest-light transition-colors"
           >
