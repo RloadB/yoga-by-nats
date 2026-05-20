@@ -13,16 +13,14 @@ export default function Hero() {
 
       <div className="relative site-container flex h-full flex-col items-center justify-center pt-24 text-center">
         <p className="mb-7 font-sans text-[10px] uppercase tracking-[0.42em] text-cream/70">
-          Yoga · Ritual · Presence
+          Yoga By Nats · Antwerp
         </p>
         <h1 className="mb-8 max-w-[980px] font-serif text-[clamp(3.1rem,8vw,6.7rem)] font-light leading-[1.02] text-cream">
-          A soft space for movement,
-          <br />
-          breath and ritual.
+          A soft space for movement, breath and ritual.
         </h1>
         <p className="mb-10 max-w-[31rem] font-sans text-base leading-[1.85] text-cream/72">
-          I guide grounding yoga and intimate rituals in Antwerp for people who
-          want to move with more softness and presence.
+          Yoga classes and intimate workshops in Antwerp, created for slower
+          breath, grounded movement and quiet presence.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a

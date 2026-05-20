@@ -1,18 +1,18 @@
 export default function Footer() {
   return (
     <footer className="bg-brown">
-      <div className="site-container pt-24 pb-10 lg:pt-32 lg:pb-14">
+      <div className="site-container pt-20 pb-10 lg:pt-24 lg:pb-12">
 
-        <div className="mb-16 border-b border-white/[8%] pb-16 text-center lg:mb-20 lg:pb-20">
+        <div className="mb-14 border-b border-white/[8%] pb-14 text-center lg:mb-16 lg:pb-16">
           <p className="mb-7 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
-            Yoga By Nats
+            YOGA BY NATS
           </p>
-          <p className="mx-auto max-w-[980px] font-serif text-[clamp(3rem,6.6vw,5.7rem)] leading-[1.02] text-cream">
+          <p className="mx-auto max-w-[760px] font-serif text-[clamp(2.4rem,5vw,4.3rem)] leading-[1.08] text-cream">
             A softer rhythm for movement, ritual and presence in Antwerp.
           </p>
         </div>
 
-        <div className="mb-16 grid grid-cols-1 gap-12 lg:mb-20 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
+        <div className="mb-14 grid grid-cols-1 gap-12 lg:mb-16 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
           <div>
             <img
               src="/logo/logo.png"

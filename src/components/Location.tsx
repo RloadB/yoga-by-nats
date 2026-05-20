@@ -13,17 +13,18 @@ export default function Location() {
             </h2>
             <p className="mb-6 font-sans text-base leading-[1.85] text-brown-light">
               I offer weekly practice in Antwerp for people who want a softer,
-              more grounded way to move. My Hatha classes are open to all levels,
-              and my ritual workshops create space for reflection, breath and
-              presence.
+              more grounded way to move.
+            </p>
+            <p className="mb-6 font-sans text-base leading-[1.85] text-brown-light">
+              My Hatha classes are open to all levels, and my ritual workshops
+              create space for reflection, breath and presence.
             </p>
             <p className="font-sans text-base leading-[1.85] text-brown-light">
-              I created this space for anyone who wants movement to feel intimate,
-              steady and human. Come exactly as you are.
+              Come exactly as you are.
             </p>
           </div>
 
-          <div className="grid rounded-[1.25rem] bg-forest px-8 py-12 text-cream md:px-12 lg:px-14 lg:py-16">
+          <div className="grid rounded-[1.25rem] bg-forest px-8 py-12 text-cream md:px-12 lg:px-14 lg:py-16 overflow-hidden">
             <div className="self-start">
               <p className="mb-8 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
                 Details

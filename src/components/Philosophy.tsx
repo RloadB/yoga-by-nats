@@ -1,15 +1,15 @@
 const pillars = [
   {
     title: 'Slow and intentional',
-    body: 'No rushing, no pressure. Each session moves at a pace that lets you actually feel what you are doing.',
+    body: 'No rushing. No pressure. Each session moves at a pace that lets you feel what you are doing.',
   },
   {
     title: 'Spiritually grounded',
-    body: 'Rooted in traditional practice but welcoming and approachable. Spirit is present without being overwhelming.',
+    body: 'Rooted in traditional practice, but welcoming and approachable.',
   },
   {
     title: 'Beginner-friendly',
-    body: 'You do not need experience or flexibility. Your curiosity and willingness to show up is enough.',
+    body: 'You do not need experience. Curiosity is enough.',
   },
 ]
 
