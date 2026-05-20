@@ -1,43 +1,69 @@
+import { useState } from 'react'
+
 export default function About() {
+  const [imageSrc, setImageSrc] = useState('/images/natalia/natalia-temple.jpg')
+
   return (
     <section id="about" className="section-space bg-cream">
       <div className="site-container">
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:gap-24">
+        <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
 
           <div className="relative">
-            <div className="relative mx-auto aspect-[4/5] max-w-[460px] overflow-hidden rounded-[1.25rem] bg-cream-dark shadow-[0_28px_90px_rgba(42,31,26,0.1)] lg:mx-0">
+            <div className="relative mx-auto aspect-[4/5] max-w-[440px] overflow-hidden rounded-[1.25rem] bg-cream-dark shadow-[0_28px_90px_rgba(42,31,26,0.11)] lg:mx-0">
               <img
-                src="/images/natalia/natalia-temple.jpg"
+                src={imageSrc}
                 alt="Natalia sitting in front of a temple stairway"
-                onError={(event) => {
-                  event.currentTarget.src = '/images/natalia/natalia-about.jpg'
-                }}
-                className="absolute inset-0 h-full w-full object-cover object-[center_56%] contrast-[0.94] saturate-[0.82]"
+                onError={() => setImageSrc('/images/natalia/natalia-about.jpg')}
+                className="absolute inset-0 h-full w-full object-cover object-center contrast-[0.96] saturate-[0.86]"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-cream/8 via-transparent to-brown/20" />
+              <div className="absolute inset-0 bg-gradient-to-b from-cream/10 via-transparent to-brown/18" />
+            </div>
+            <div className="mx-auto mt-6 max-w-[440px] rounded-[1rem] border border-brown/10 bg-cream px-6 py-7 text-forest shadow-[0_18px_60px_rgba(42,31,26,0.06)] lg:absolute lg:-bottom-10 lg:-right-8 lg:mt-0 lg:w-[54%]">
+              <p className="mb-4 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
+                My intention
+              </p>
+              <p className="font-serif text-[clamp(1.45rem,2vw,1.9rem)] leading-[1.18]">
+                I hold space for slower breath, softer strength and quiet return.
+              </p>
             </div>
           </div>
 
-          <div className="mx-auto max-w-[600px] lg:mx-0">
-            <p className="mb-8 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
+          <div className="mx-auto max-w-[620px] lg:mx-0 lg:pl-4">
+            <p className="mb-6 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
               About the space
             </p>
-            <h2 className="mb-10 max-w-[620px] font-serif text-[clamp(2.55rem,4.4vw,4.05rem)] leading-[1.08] text-forest">
-              I created Yoga By Nats as a quiet return.
+            <h2 className="mb-8 max-w-[650px] font-serif text-[clamp(2.65rem,5vw,4.6rem)] leading-[1.04] text-forest">
+              I created Yoga By Nats as a quiet return to the body.
             </h2>
-            <p className="mb-7 max-w-[31rem] font-sans text-[1.02rem] leading-[1.95] text-brown-light">
-              I guide Hatha yoga, breathwork and ritual-inspired practices in
-              Antwerp. My approach is warm, intuitive and rooted in presence.
+            <p className="mb-6 max-w-[34rem] font-sans text-base leading-[1.85] text-brown-light">
+              I guide Hatha yoga, gentle movement, breathwork and ritual-inspired
+              practices here in Antwerp. My approach is warm, intuitive and rooted
+              in presence, not performance.
             </p>
-            <p className="mb-12 max-w-[31rem] font-sans text-[1.02rem] leading-[1.95] text-brown-light">
-              My classes are small and spacious. I want you to feel held, never
-              rushed, and free to arrive exactly as you are.
+            <p className="mb-9 max-w-[34rem] font-sans text-base leading-[1.85] text-brown-light">
+              My classes are intentionally small and spacious. I want you to feel
+              held, never rushed, and free to meet yourself exactly where you are.
             </p>
-            <p className="max-w-[31rem] border-t border-brown/10 pt-9 font-serif text-[clamp(1.75rem,2.6vw,2.25rem)] italic leading-[1.25] text-forest/62">
+            <p className="mb-10 max-w-[35rem] font-serif text-[clamp(1.8rem,3vw,2.35rem)] italic leading-[1.2] text-forest/65">
               "You do not need to perform here.
               <br />
               You simply arrive as you are."
             </p>
+
+            <div className="grid grid-cols-1 gap-5 border-t border-brown/10 pt-7 sm:grid-cols-3">
+              <div>
+                <p className="font-serif text-2xl text-forest">Hatha</p>
+                <p className="mt-1 font-sans text-sm text-brown-light/60">steady practice</p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl text-forest">Ritual</p>
+                <p className="mt-1 font-sans text-sm text-brown-light/60">moon workshops</p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl text-forest">Breath</p>
+                <p className="mt-1 font-sans text-sm text-brown-light/60">soft presence</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
