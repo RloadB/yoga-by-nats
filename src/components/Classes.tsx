@@ -91,9 +91,9 @@ export default function Classes() {
           <div className="relative aspect-[4/5] overflow-hidden lg:aspect-[16/10]">
             {/* Temporary image until final Yoga By Nats private session photography is available. */}
             <img
-              src="/images/natalia/hatha_yoga_highres.png"
+              src="/images/natalia/group-yoga-class.jpg"
               alt="Private yoga session at Yoga By Nats"
-              className="absolute inset-0 h-full w-full object-cover object-[center_58%]"
+              className="absolute inset-0 h-full w-full object-cover object-center saturate-[0.85]"
             />
           </div>
         </div>

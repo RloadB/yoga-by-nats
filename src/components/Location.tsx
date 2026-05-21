@@ -24,7 +24,7 @@ export default function Location() {
             </p>
           </div>
 
-          <div className="grid rounded-[1.25rem] bg-forest px-8 py-12 text-cream md:px-12 lg:px-14 lg:py-16 overflow-hidden">
+          <div className="grid w-full max-w-[470px] justify-self-end overflow-hidden rounded-[1.25rem] bg-forest px-8 py-12 text-cream md:px-12 lg:px-14 lg:py-16">
             <div className="self-start">
               <p className="mb-8 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
                 Details

@@ -25,12 +25,11 @@ export default function ContactBooking() {
           <p className="mb-6 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
             GET IN TOUCH
           </p>
-          <h2 className="mx-auto mb-8 max-w-[760px] font-serif text-[clamp(2.55rem,5vw,4.25rem)] leading-[1.06] text-forest">
+          <h2 className="mx-auto mb-8 max-w-none font-serif text-[clamp(1.6rem,3vw,2.15rem)] leading-[1.12] text-forest lg:whitespace-nowrap">
             Have a question or want to join a class?
           </h2>
-          <p className="mx-auto mb-10 max-w-[38rem] font-sans text-base leading-[1.85] text-brown-light">
-            Send me a message if you want to book a private session, ask about
-            workshops or find the right class for you.
+          <p className="mx-auto mb-10 max-w-none font-sans text-sm leading-[1.85] text-brown-light lg:whitespace-nowrap">
+            Send me a message if you want to book a private session, ask about workshops or find the right class for you.
           </p>
 
           <div className="mx-auto mb-10 grid max-w-xl gap-3 font-sans text-sm leading-relaxed text-brown-light">
@@ -61,9 +60,9 @@ export default function ContactBooking() {
           <h2 className="mb-12 text-center font-serif text-[clamp(2.4rem,5vw,4.2rem)] leading-[1.08]">
             Frequently asked questions
           </h2>
-          <div className="grid gap-7 text-center">
+          <div className="grid gap-6 text-center md:grid-cols-2">
             {faqs.map((item) => (
-              <div key={item.question} className="border-b border-cream/12 pb-7">
+              <div key={item.question} className="min-h-[190px] rounded-[0.75rem] border border-cream/12 bg-cream/[0.04] px-7 py-8">
                 <h3 className="mb-3 font-serif text-[clamp(1.45rem,3vw,2rem)] leading-tight text-cream">
                   {item.question}
                 </h3>
