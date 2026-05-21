@@ -61,13 +61,13 @@ export default function ContactBooking() {
           <h2 className="mb-12 text-center font-serif text-[clamp(2.4rem,5vw,4.2rem)] leading-[1.08]">
             Frequently asked questions
           </h2>
-          <div className="grid gap-7">
+          <div className="grid gap-7 text-center">
             {faqs.map((item) => (
               <div key={item.question} className="border-b border-cream/12 pb-7">
                 <h3 className="mb-3 font-serif text-[clamp(1.45rem,3vw,2rem)] leading-tight text-cream">
                   {item.question}
                 </h3>
-                <p className="max-w-2xl font-sans text-sm leading-[1.8] text-cream/55">
+                <p className="mx-auto max-w-2xl font-sans text-sm leading-[1.8] text-cream/55">
                   {item.answer}
                 </p>
               </div>

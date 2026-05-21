@@ -7,7 +7,7 @@ export default function Footer() {
           <p className="mb-7 font-sans text-[10px] uppercase tracking-[0.35em] text-terracotta">
             YOGA BY NATS
           </p>
-          <p className="mx-auto max-w-[760px] font-serif text-[clamp(2.4rem,5vw,4.3rem)] leading-[1.08] text-cream">
+          <p className="mx-auto max-w-[980px] whitespace-normal font-serif text-[clamp(1.55rem,2.4vw,2.15rem)] leading-[1.18] text-cream lg:whitespace-nowrap">
             A softer rhythm for movement, ritual and presence in Antwerp.
           </p>
         </div>
